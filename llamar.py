@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import math
 import functions.Vto as Vto
 
 #datos desde excel
