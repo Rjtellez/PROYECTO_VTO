@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.dates import date2num
 import Vto
 
-df = pd.read_csv("Estacion_PUEBLA__3_dias.csv",skiprows=9)
+df = pd.read_csv("data/Estacion_PUEBLA__3_dias.csv",skiprows=9)
 
 #extraer por numero de columna
 df['fecha'] = pd.to_datetime(df['Fecha UTC'], format='%d/%m/%Y %H:%M')

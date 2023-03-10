@@ -46,19 +46,19 @@ if __name__ == '__main__':
     # dir = np.array([90,110])
 
 #extraer datos desde excel con el nombre de la columna
-    #df = pd.read_excel("dir y mag vto.xlsx")
+    #df = pd.read_excel("data/dir y mag vto.xlsx")
     #dir = df['direccion']
     #mag = df['magnitud']
 
 #extraer datos desde excel con el numero de columna
-    df = pd.read_excel("dir y mag vto.xlsx")
+    df = pd.read_excel("data/dir y mag vto.xlsx")
     dir = df[df.columns[0]]
     mag = df[df.columns[1]]
 
 #promedio del viento de excel
     # dirprom,magprom = promedio(dir,mag)
     # DF3 = pd.DataFrame({'DIRPROM': [dirprom], 'MAGPROM': [magprom]})
-    # DF3.to_excel('direccion_promedio.xlsx')
+    # DF3.to_excel('data/direccion_promedio.xlsx')
     print(dir)
     print(convertir_a_rosa(dir))
 
@@ -70,7 +70,7 @@ if __name__ == '__main__':
     #DF2 = pd.DataFrame(DF)
 #salidas
     #print(U, V)
-    #DF2.to_excel('salida.xlsx',index=False)
+    #DF2.to_excel('data/salida.xlsx',index=False)
 
     #print(DF2)
 
