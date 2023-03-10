@@ -1,10 +1,4 @@
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import math
-import matplotlib.dates as dates
-import matplotlib.pyplot as plt
-from matplotlib.dates import date2num
 import Vto
 
 df = pd.read_csv("data/Estacion_PUEBLA__3_dias.csv",skiprows=9)
