@@ -17,7 +17,7 @@ def convertir_a_uv(direccion, magnitud):
     # dirección en  grados y magnitud en lo que sea
     u = np.round(-magnitud * np.sin(np.deg2rad(direccion)), decimals=14)
     v = np.round(-magnitud * np.cos(np.deg2rad(direccion)), decimals=14)
-    return u, v
+    return u, v 
 
 def convertir_a_dirmag(u,v):
     #dirección en  grados y magnitud en lo que sea
@@ -37,7 +37,7 @@ def convertir_a_rosa(direccion):
     #convertir a rosa de vientos
     directions = np.array('N NNE NE ENE E ESE SE SSE S SSW SW WSW W WNW NW NNW N NAN'.split())
     bins = np.arange(11.25, 372, 22.5)
-    serie = pd.Series(directions[np.digitize(direccion, bins)])
+    serie = pd.Series(directions[np.digitize(np.remainder(direccion,360), bins)])
     return serie.replace('NAN', np.nan)
 
 if __name__ == '__main__':
