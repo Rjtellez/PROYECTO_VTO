@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import math
-import Vto
+import functions.Vto as Vto
 
 #datos desde excel
 df= pd.read_excel("confechas.xlsx")

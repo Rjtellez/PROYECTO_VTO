@@ -3,8 +3,6 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import math
-from matplotlib.dates import date2num
 
 def grafica_de_astillas(time, u, v, **kw):
     width = kw.pop('width', 0.002)

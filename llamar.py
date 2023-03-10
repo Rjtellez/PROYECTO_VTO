@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import math
-import Vto
+import functions.Vto as Vto
 
 #datos desde excel
 df= pd.read_excel("tabla p.vto.xlsx")

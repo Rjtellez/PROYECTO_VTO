@@ -1,5 +1,5 @@
 import pandas as pd
-import Vto
+import functions.Vto as Vto
 
 df = pd.read_csv("data/Estacion_PUEBLA__3_dias.csv",skiprows=9)
 
